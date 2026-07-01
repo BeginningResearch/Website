@@ -25,7 +25,7 @@
     /* ===== Gold/Accent Colors ===== */
     --gold: #c9a84c;                /* Subscribe Badge, Special Buttons */
     --gold-dark: #b8973a;           /* Gold Button Hover */
-    --gold-light: #f5a623;          /* Star Ratings */
+    --gold-dark: #f5a623;          /* Star Ratings */
     
     /* ===== Transparent Colors ===== */
     --rgba-white-06: rgba(255, 255, 255, 0.06);   /* Floating Badges, Cards */
