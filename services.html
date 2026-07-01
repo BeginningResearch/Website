@@ -4,58 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - Beginning Research</title>
-    <meta name="description" content="Beginning Research - SEBI Registered Investment Advisory Services for Cash, Futures, Stock Options & Index Options." />
+    <meta name="description" content="Beginning Research - SEBI Registered Investment Advisory Services." />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     
     <style>
-        .segment-box {
-            background: var(--bg-card);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius);
-            padding: 28px 24px;
-            border-left: 4px solid var(--accent-gold);
-            transition: var(--transition);
-        }
-        .segment-box:hover {
-            background: var(--bg-card-hover);
-        }
-        .segment-box h4 {
-            font-size: 1.1rem;
-            margin-bottom: 6px;
-        }
-        .segment-box h4 i {
-            color: var(--accent-gold);
-            margin-right: 10px;
-        }
-        .segment-box p {
-            color: var(--text-gray);
-            font-size: 0.92rem;
-        }
-        .page-hero {
-            padding: 140px 0 60px;
-            text-align: center;
-        }
-        .page-hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-        }
-        .page-hero h1 span {
-            color: var(--accent-gold);
-        }
-        .page-hero p {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 12px auto 0;
-        }
-        @media (max-width: 600px) {
-            .page-hero h1 {
-                font-size: 2rem;
-            }
-        }
+        .page-hero { padding: 140px 0 60px; text-align: center; }
+        .page-hero h1 { font-size: 3.2rem; font-weight: 800; }
+        .page-hero h1 span { color: var(--accent-gold); }
+        .page-hero p { color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 12px auto 0; }
+        .segment-box { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius); padding: 28px 24px; border-left: 4px solid var(--accent-gold); transition: var(--transition); }
+        .segment-box:hover { background: var(--bg-card-hover); }
+        .segment-box h4 { font-size: 1.1rem; margin-bottom: 6px; }
+        .segment-box h4 i { color: var(--accent-gold); margin-right: 10px; }
+        .segment-box p { color: var(--text-gray); font-size: 0.92rem; }
+        .glass-card { background: var(--white); border: 1px solid rgba(0,0,0,0.05); border-radius: var(--radius); padding: 24px; text-align: center; transition: var(--transition); }
+        .glass-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+        .glass-card .card-icon { font-size: 2rem; color: var(--secondary); margin-bottom: 10px; display: block; }
+        @media (max-width:600px) { .page-hero h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -63,41 +31,37 @@
     <div class="glow-orbe glow-orbe-1"></div>
     <div class="glow-orbe glow-orbe-2"></div>
 
-    <!-- ============================================
-    NAVBAR
-    ============================================ -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-flex">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">B</div>
-                <div>
-                    <div class="logo-text">Beginning <span>Research</span></div>
-                    <span class="logo-sub">SEBI Registered · INH000016825</span>
-                </div>
-            </a>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="services.html" class="active">Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="nav-cta">
-                    <i class="fas fa-phone"></i> Get Started
+    <!-- HEADER / NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <div class="risk-disclosure-bar">
+                <p><i class="fas fa-exclamation-triangle"></i> Risk Disclosure: Investment in securities market are subject to market risks. Read all the related documents carefully before investing.</p>
+            </div>
+            <div class="nav-flex">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <div>
+                        <span class="logo-text">Beginning <span>Research</span></span>
+                        <span class="logo-sub">SEBI Registered · INH000016825</span>
+                    </div>
                 </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html" class="active">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="nav-cta">
+                        <i class="fas fa-phone" aria-hidden="true"></i> Get Started
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- ============================================
-    PAGE HERO
-    ============================================ -->
     <section class="page-hero">
         <div class="container">
             <span class="section-badge"><i class="fas fa-briefcase"></i> Our Services</span>
@@ -106,9 +70,6 @@
         </div>
     </section>
 
-    <!-- ============================================
-    SERVICES DETAIL
-    ============================================ -->
     <section class="container py-3">
         <div class="grid-2">
             <div class="segment-box">
@@ -128,111 +89,64 @@
                 <p>The Index Options Segment covers major indices with recommendations prepared after analyzing the overall market trend, technical indicators, and fundamental factors. Every call is shared only after detailed market analysis to improve the probability of successful trades. <strong>You can expect 1–2 trading calls per day.</strong></p>
             </div>
         </div>
-
-        <!-- Service Icons -->
         <div class="grid-4" style="margin-top:40px;">
-            <div class="glass-card" style="text-align:center;">
-                <i class="fas fa-coins card-icon" style="font-size:2rem;"></i>
-                <h4>Cash</h4>
-                <p style="font-size:0.8rem;">Basic · Premium · Precision</p>
-            </div>
-            <div class="glass-card" style="text-align:center;">
-                <i class="fas fa-forward card-icon" style="font-size:2rem;"></i>
-                <h4>Futures</h4>
-                <p style="font-size:0.8rem;">Basic · Premium · Precision</p>
-            </div>
-            <div class="glass-card" style="text-align:center;">
-                <i class="fas fa-chart-bar card-icon" style="font-size:2rem;"></i>
-                <h4>Stock Options</h4>
-                <p style="font-size:0.8rem;">Basic · Premium · Precision</p>
-            </div>
-            <div class="glass-card" style="text-align:center;">
-                <i class="fas fa-chart-line card-icon" style="font-size:2rem;"></i>
-                <h4>Index Options</h4>
-                <p style="font-size:0.8rem;">Basic · Premium · Precision</p>
-            </div>
+            <div class="glass-card"><i class="fas fa-coins card-icon"></i><h4>Cash</h4><p style="font-size:0.8rem;">Basic · Premium · Precision</p></div>
+            <div class="glass-card"><i class="fas fa-forward card-icon"></i><h4>Futures</h4><p style="font-size:0.8rem;">Basic · Premium · Precision</p></div>
+            <div class="glass-card"><i class="fas fa-chart-bar card-icon"></i><h4>Stock Options</h4><p style="font-size:0.8rem;">Basic · Premium · Precision</p></div>
+            <div class="glass-card"><i class="fas fa-chart-line card-icon"></i><h4>Index Options</h4><p style="font-size:0.8rem;">Basic · Premium · Precision</p></div>
         </div>
     </section>
 
-    <!-- ============================================================ -->
-  <!-- ========== FOOTER ========== -->
-  <!-- ============================================================ -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</h3>
-          
-          <!-- Sanju Patel - Proprietor -->
-          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px; margin-bottom: 2px;">
-            <strong style="color: var(--accent-gold);">Sanju Patel</strong> 
-            <span style="color: rgba(255,255,255,0.5);">· Proprietor of Beginning Research</span>
-          </p>
-          
-          <!-- Registration No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 2px;">
-            Registration No. <strong style="color: var(--accent-gold);">INH000016825</strong>
-          </p>
-          
-          <!-- BSE Enlistment No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 6px;">
-            BSE Enlistment No. <strong style="color: var(--accent-gold);">6225</strong>
-          </p>
-          
-          <!-- Address, Email, Support -->
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; line-height: 1.5; max-width: 350px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); width: 18px;"></i>
-            305 Princess Business Skyline, AB Road, Vijay Nagar, Indore, MP - 452010
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-envelope" style="color: var(--accent-gold); width: 18px;"></i>
-            patelsanju9893@gmail.com
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-phone" style="color: var(--accent-gold); width: 18px;"></i>
-            Support: 7509343696
-          </p>
-          
-          <div class="social-icons" style="margin-top: 14px;">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Cash Segment</a></li>
-            <li><a href="services.html">Futures Segment</a></li>
-            <li><a href="services.html">Stock Options</a></li>
-            <li><a href="services.html">Index Options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:7509343696"><i class="fas fa-phone" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> 7509343696</a></li>
-            <li><a href="mailto:patelsanju9893@gmail.com"><i class="fas fa-envelope" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> patelsanju9893@gmail.com</a></li>
-            <li><a href="#"><i class="fas fa-globe" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> www.beginningresearch.in</a></li>
-            <li><a href="#"><i class="fab fa-whatsapp" style="color: #25D366; width: 20px;" aria-hidden="true"></i> WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Beginning Research. All rights reserved.</span>
-        <span class="sebi-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> SEBI Registered · INH000016825</span>
-        <span>Made with <i class="fas fa-heart" style="color: #7bc9a0;" aria-hidden="true"></i> in India</span>
-      </div>
-    </div>
-  </footer>
+    <!-- FOOTER - SAME AS INDEX -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px; margin-bottom: 2px;">
+                        <strong style="color: var(--accent-gold);">Sanju Patel</strong> 
+                        <span style="color: rgba(255,255,255,0.5);">· Proprietor of Beginning Research</span>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 2px;">
+                        Registration No. <strong style="color: var(--accent-gold);">INH000016825</strong>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 6px;">
+                        BSE Enlistment No. <strong style="color: var(--accent-gold);">6225</strong>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; line-height: 1.5; max-width: 350px;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); width: 18px;"></i>
+                        305 Princess Business Skyline, AB Road, Vijay Nagar, Indore, MP - 452010
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
+                        <i class="fas fa-envelope" style="color: var(--accent-gold); width: 18px;"></i>
+                        patelsanju9893@gmail.com
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
+                        <i class="fas fa-phone" style="color: var(--accent-gold); width: 18px;"></i>
+                        Support: 7509343696
+                    </p>
+                    <div class="social-icons" style="margin-top: 14px;">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cash Segment</a></li>
+                        <li><a href="services.html">Futures Segment</a></li>
+                        <li><a href="services.html">Stock Options</a></li>
+                        <li><a href="services.html">Index Options</a></li>
+                    </ul>
