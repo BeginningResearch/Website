@@ -8,7 +8,7 @@
   <!-- Primary Meta Tags -->
   <title>Beginning Research | SEBI Registered Investment Advisor</title>
   <meta name="title" content="Beginning Research - SEBI Registered Investment Advisor" />
-  <meta name="description" content="SEBI Registered (INH000016825) Investment Advisory for Nifty, Bank Nifty, F&O and Equity Trading. Research-Based, Disciplined and Transparent Advisory with 12,500+ happy clients." />
+  <meta name="description" content="SEBI Registered (INH000016825) Investment Advisory for Nifty, Bank Nifty, F&O and Equity Trading. Research-Based, Disciplined and Transparent Advisory." />
   <meta name="keywords" content="investment advisory, SEBI registered, stock market advisory, Nifty options, Bank Nifty options, F&O trading, equity trading, risk management, research-based advisory, beginning research" />
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
@@ -84,7 +84,7 @@
       --radius: 8px;
       --transition: 0.3s ease;
       
-      /* ✅ ADDED - Gold Colors */
+      /* Gold Colors */
       --accent-gold: #c9a84c;
       --accent-gold-dark: #b8973a;
     }
@@ -102,7 +102,9 @@
       padding: 0 28px;
     }
 
-    /* ----- navigation ----- */
+    /* ============================================================ */
+    /* ========== HEADER / NAVIGATION ========== */
+    /* ============================================================ */
     .navbar {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
@@ -111,9 +113,15 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: 60;
+      z-index: 1000;
       padding: 14px 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
     }
 
     .nav-flex {
@@ -121,21 +129,40 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 16px;
     }
 
     .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      text-decoration: none;
       color: var(--primary);
     }
 
     .logo i {
-      color: var(--secondary);
       font-size: 2rem;
+      color: var(--secondary);
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+    }
+
+    .logo-text span {
+      color: var(--accent-gold);
+    }
+
+    .logo-sub {
+      display: block;
+      font-size: 0.6rem;
+      color: #8a8a9a;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: -4px;
     }
 
     .nav-links {
@@ -176,6 +203,35 @@
       background: var(--secondary-light);
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(26, 107, 74, 0.35);
+    }
+
+    /* ===== Mobile Menu Toggle ===== */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .menu-toggle span {
+      width: 28px;
+      height: 2.5px;
+      background: var(--primary);
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
     }
 
     /* pages */
@@ -517,9 +573,9 @@
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      max-width: 1100px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
@@ -1028,10 +1084,18 @@
         gap: 30px;
       }
       .nav-links {
-        gap: 18px;
-        font-size: 0.95rem;
-        justify-content: center;
-        margin-top: 12px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+        gap: 16px;
+        align-items: center;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
       }
       .nav-flex {
         flex-direction: column;
@@ -1070,10 +1134,12 @@
       .grid-3 {
         grid-template-columns: 1fr;
         max-width: 400px;
+        margin: 0 auto;
       }
       .grid-4 {
         grid-template-columns: 1fr 1fr;
         max-width: 400px;
+        margin: 0 auto;
       }
       .cta-grid {
         flex-direction: column;
@@ -1087,6 +1153,10 @@
       }
       .hero-image .floating-badge {
         display: none;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
       }
     }
 
@@ -1149,16 +1219,34 @@
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
+  <!-- ============================================================ -->
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <!-- ============================================================ -->
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="container nav-flex">
-      <div class="logo"><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</div>
+      <a href="index.html" class="logo">
+        <i class="fas fa-chart-line" aria-hidden="true"></i>
+        <div>
+          <span class="logo-text">Beginning <span>Research</span></span>
+          <span class="logo-sub">SEBI Registered · INH000016825</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav-links" id="navLinks">
-        <a href="#" data-page="landing" class="active"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
-        <a href="#" data-page="about"><i class="fas fa-info-circle" aria-hidden="true"></i> About</a>
-        <a href="#" data-page="services"><i class="fas fa-briefcase" aria-hidden="true"></i> Services</a>
-        <a href="#" data-page="contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
-        <a href="#" data-page="contact" class="nav-cta"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">
+          <i class="fas fa-phone" aria-hidden="true"></i> Get Started
+        </a>
       </div>
     </div>
   </nav>
@@ -1196,10 +1284,6 @@
           <div class="floating-badge top-right">
             <i class="fas fa-star" aria-hidden="true"></i>
             <span>4.8/5 Rating</span>
-          </div>
-          <div class="floating-badge bottom-left">
-            <i class="fas fa-users" aria-hidden="true"></i>
-            <span>12,500+ Clients</span>
           </div>
         </div>
       </div>
@@ -1523,19 +1607,19 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#" data-page="landing">Home</a></li>
-            <li><a href="#" data-page="about">About Us</a></li>
-            <li><a href="#" data-page="services">Services</a></li>
-            <li><a href="#" data-page="contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#" data-page="services">Cash Segment</a></li>
-            <li><a href="#" data-page="services">Futures Segment</a></li>
-            <li><a href="#" data-page="services">Stock Options</a></li>
-            <li><a href="#" data-page="services">Index Options</a></li>
+            <li><a href="services.html">Cash Segment</a></li>
+            <li><a href="services.html">Futures Segment</a></li>
+            <li><a href="services.html">Stock Options</a></li>
+            <li><a href="services.html">Index Options</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -1560,7 +1644,35 @@
   <!-- ========== SCRIPT ========== -->
   <!-- ============================================================ -->
   <script>
-    (function() {
+    // ============================================================
+    // MOBILE MENU TOGGLE
+    // ============================================================
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+        });
+      }
+
+      // ============================================================
+      // NAVBAR SCROLL EFFECT
+      // ============================================================
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ============================================================
+      // PAGE NAVIGATION (SPA)
+      // ============================================================
       const pages = {
         landing: document.getElementById('page-landing'),
         about: document.getElementById('page-about'),
@@ -1568,16 +1680,16 @@
         contact: document.getElementById('page-contact')
       };
 
-      const navLinks = document.querySelectorAll('#navLinks a[data-page]');
+      const navLinksAll = document.querySelectorAll('#navLinks a[data-page]');
 
       function showPage(pageId) {
         Object.keys(pages).forEach(key => {
-          pages[key].classList.remove('active');
+          if (pages[key]) pages[key].classList.remove('active');
         });
         if (pages[pageId]) {
           pages[pageId].classList.add('active');
         }
-        navLinks.forEach(link => {
+        navLinksAll.forEach(link => {
           link.classList.remove('active');
           if (link.dataset.page === pageId) {
             link.classList.add('active');
@@ -1606,7 +1718,7 @@
       const initHash = window.location.hash.replace('#', '');
       if (initHash && pages[initHash]) showPage(initHash);
       else showPage('landing');
-    })();	
+    });
   </script>
 </body>
 </html>
