@@ -1,54 +1,54 @@
 /* ============================================
-   ROOT VARIABLES - EXACT YOUR COLORS
+   ROOT VARIABLES - BRIGHT COLORS
    ============================================ */
 :root {
     /* ===== Dark Navy Colors ===== */
-    --dark-navy: #0a2540;           /* Background, Hero, Footer */
-    --dark-navy-light: #1a3b5c;     /* Gradient Background */
-    --dark-navy-medium: #0d3352;    /* Gradient Background */
-    --dark-navy-dark: #1a4a6e;      /* Gradient Background */
+    --dark-navy: #0a2540;
+    --dark-navy-light: #1a3b5c;
+    --dark-navy-medium: #0d3352;
+    --dark-navy-dark: #1a4a6e;
     
-    /* ===== Green Colors (Accent/Secondary) ===== */
-    --green-main: #1a6b4a;          /* Buttons, Icons, Borders, Highlights */
-    --green-light: #2a8b5a;         /* Button Hover */
-    --green-light-bg: #e8f5ee;      /* Badge Background */
-    --green-glow: #7bc9a0;          /* Hero Text, Hover Effects */
-    --green-dark: #0a3d2a;          /* Implied Dark Green */
+    /* ===== Green Colors (Accent) ===== */
+    --green-main: #1a6b4a;
+    --green-light: #2a8b5a;
+    --green-light-bg: #e8f5ee;
+    --green-glow: #7bc9a0;
+    --green-dark: #0a3d2a;
     
-    /* ===== White & Gray Colors ===== */
-    --white: #ffffff;               /* Text, Cards, Backgrounds */
-    --light-gray: #f5f7fa;          /* Body Background */
-    --gray-muted: #2a4055;          /* Secondary Text */
-    --gray-dark: #0a1a2a;           /* Dark Text */
-    --gray-light: #dde3e9;          /* Form Borders */
+    /* ===== White & Bright Gray Colors ===== */
+    --white: #ffffff;
+    --light-gray: #f0f2f5;        /* Slightly brighter */
+    --gray-muted: #3a4a5f;         /* Brighter than before */
+    --gray-dark: #0a1a2a;
+    --gray-light: #c8cdd5;         /* Brighter border */
+    --text-gray: #8a8a9a;          /* Brighter gray */
     
-    /* ===== Gold/Accent Colors ===== */
-    --gold: #c9a84c;                /* Subscribe Badge, Special Buttons */
-    --gold-dark: #b8973a;           /* Gold Button Hover */
-    --gold-dark: #f5a623;          /* Star Ratings */
+    /* ===== Gold Colors ===== */
+    --gold: #c9a84c;
+    --gold-dark: #b8973a;
+    --gold-light: #f5a623;
     
     /* ===== Transparent Colors ===== */
-    --rgba-white-06: rgba(255, 255, 255, 0.06);   /* Floating Badges, Cards */
-    --rgba-white-08: rgba(255, 255, 255, 0.08);   /* Hero Borders, Hover */
-    --rgba-green-08: rgba(26, 107, 74, 0.08);     /* Hero Background Glow */
-    --rgba-green-05: rgba(26, 107, 74, 0.05);     /* Hero Background Glow */
-    --rgba-green-15: rgba(26, 107, 74, 0.15);     /* Badge Background */
-    --rgba-green-02: rgba(26, 107, 74, 0.02);     /* Card Borders */
-    --rgba-black-04: rgba(0, 0, 0, 0.04);         /* Navbar Shadow */
-    --rgba-black-12: rgba(0, 0, 0, 0.12);         /* Card Shadow */
+    --rgba-white-06: rgba(255, 255, 255, 0.06);
+    --rgba-white-08: rgba(255, 255, 255, 0.08);
+    --rgba-green-08: rgba(26, 107, 74, 0.08);
+    --rgba-green-05: rgba(26, 107, 74, 0.05);
+    --rgba-green-15: rgba(26, 107, 74, 0.15);
+    --rgba-green-02: rgba(26, 107, 74, 0.02);
+    --rgba-black-04: rgba(0, 0, 0, 0.04);
+    --rgba-black-12: rgba(0, 0, 0, 0.12);
     
     /* ===== Special Colors ===== */
-    --whatsapp-green: #25D366;      /* WhatsApp Icons */
-    --star-gold: #f5a623;           /* Rating Stars */
+    --whatsapp-green: #25D366;
+    --star-gold: #f5a623;
     
-    /* ===== UI Variables (Derived) ===== */
+    /* ===== UI Variables ===== */
     --bg-body: var(--light-gray);
     --bg-hero: var(--dark-navy);
     --bg-footer: var(--dark-navy);
     --text-primary: var(--gray-dark);
-    --text-secondary: var(--gray-muted);
+    --text-secondary: #3a4a5f;      /* Brighter */
     --text-white: var(--white);
-    --text-gray: #aaaaaa;
     
     --radius: 8px;
     --shadow: 0 16px 40px -12px var(--rgba-black-12);
@@ -693,6 +693,44 @@ a {
 }
 
 /* ============================================
+   GLASS CARDS
+   ============================================ */
+.glass-card {
+    background: var(--white);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--rgba-green-02);
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.glass-card:hover {
+    border-color: var(--rgba-green-15);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px var(--rgba-black-12);
+}
+
+.glass-card .card-icon {
+    font-size: 2.4rem;
+    color: var(--green-main);
+    margin-bottom: 14px;
+    display: block;
+}
+
+.glass-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--dark-navy);
+}
+
+.glass-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ============================================
    TESTIMONIALS
    ============================================ */
 .testimonial-card {
@@ -896,7 +934,7 @@ a {
 }
 
 /* ============================================
-   CONTACT PAGE
+   CONTACT PAGE - FIXED (Bright & Visible)
    ============================================ */
 .contact-wrapper {
     display: grid;
@@ -931,6 +969,7 @@ a {
     font-size: 1.3rem;
 }
 
+/* ===== CONTACT FORM - BRIGHT & VISIBLE ===== */
 .contact-form {
     background: var(--white);
     padding: 36px;
@@ -938,33 +977,59 @@ a {
     box-shadow: var(--shadow);
 }
 
+/* ✅ INPUT FIELDS - DARK TEXT, BRIGHT BORDER */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 16px 20px;
-    border: 1px solid var(--gray-light);
+    border: 2px solid #c8cdd5;      /* Bright border */
     border-radius: var(--radius);
     font-size: 1rem;
     background: var(--white);
+    color: #1a1a2e;                  /* DARK TEXT - Clearly Visible */
     transition: var(--transition);
     margin-bottom: 16px;
     font-family: inherit;
 }
 
+/* ✅ PLACEHOLDER - Medium Gray */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888899;                  /* Medium Gray - Not too light */
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* ✅ FOCUS STATE - Green Glow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--green-main);
+    border-color: transparent;
+    color: #1a1a2e;
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(26, 107, 74, 0.12);
+}
+
+/* ✅ TEXTAREA */
 .contact-form textarea {
     min-height: 140px;
     resize: vertical;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 2px solid var(--green-main);
-    border-color: transparent;
-}
-
+/* ✅ FORM BUTTON */
 .contact-form .btn {
     width: 100%;
     justify-content: center;
+    padding: 16px 36px;
+    font-size: 1.05rem;
+}
+
+/* ✅ FORM HEADING */
+.contact-form h3 {
+    color: var(--dark-navy);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 /* ============================================
@@ -1200,6 +1265,10 @@ a {
     .pricing-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1277,10 +1346,12 @@ a {
     .grid-3 {
         grid-template-columns: 1fr;
         max-width: 400px;
+        margin: 0 auto;
     }
     .grid-4 {
         grid-template-columns: 1fr 1fr;
         max-width: 400px;
+        margin: 0 auto;
     }
     .pricing-grid {
         grid-template-columns: 1fr;
@@ -1333,6 +1404,10 @@ a {
     .cta-section p {
         font-size: 1rem;
     }
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1348,6 +1423,8 @@ a {
 .mb-3 { margin-bottom: 30px; }
 .text-center { text-align: center; }
 .py-4 { padding-top: 40px; padding-bottom: 40px; }
+.py-3 { padding-top: 30px; padding-bottom: 30px; }
 .section-padding { padding: 60px 0; }
 .text-gold { color: var(--gold); }
 .text-green { color: var(--green-main); }
+.text-white { color: var(--white); }
