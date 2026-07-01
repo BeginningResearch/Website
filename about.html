@@ -11,79 +11,17 @@
     <link rel="stylesheet" href="style.css" />
     
     <style>
-        .page-hero {
-            padding: 140px 0 40px;
-            text-align: center;
-        }
-        .page-hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-        }
-        .page-hero h1 span {
-            color: var(--accent-gold);
-        }
-        .page-hero p {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 12px auto 0;
-        }
-        .about-feature {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin: 10px 0;
-        }
-        .about-feature i {
-            color: var(--accent-gold);
-            font-size: 1.2rem;
-            width: 30px;
-        }
-        .about-box {
-            background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: var(--radius);
-            padding: 32px;
-        }
-        .about-box h4 {
-            color: var(--accent-gold);
-            margin-bottom: 12px;
-        }
-        .about-box hr {
-            border-color: rgba(255,255,255,0.05);
-            margin: 20px 0;
-        }
-        .about-quote {
-            background: rgba(255,179,71,0.06);
-            padding: 16px;
-            border-radius: var(--radius);
-            border-left: 4px solid var(--accent-gold);
-        }
-        /* Risk Disclosure Bar - Header Top */
-        .risk-disclosure-bar {
-            background: rgba(255, 179, 71, 0.06);
-            border-bottom: 1px solid rgba(255, 179, 71, 0.08);
-            padding: 5px 0;
-            text-align: center;
-        }
-        .risk-disclosure-bar p {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.55rem;
-            letter-spacing: 0.3px;
-            margin: 0;
-        }
-        .risk-disclosure-bar i {
-            color: var(--accent-gold);
-            margin-right: 6px;
-        }
-        @media (max-width: 600px) {
-            .page-hero h1 {
-                font-size: 2rem;
-            }
-            .risk-disclosure-bar p {
-                font-size: 0.45rem;
-            }
-        }
+        .page-hero { padding: 140px 0 40px; text-align: center; }
+        .page-hero h1 { font-size: 3.2rem; font-weight: 800; }
+        .page-hero h1 span { color: var(--accent-gold); }
+        .page-hero p { color: var(--text-gray); font-size: 1.1rem; max-width: 600px; margin: 12px auto 0; }
+        .about-feature { display: flex; align-items: center; gap: 14px; margin: 10px 0; }
+        .about-feature i { color: var(--accent-gold); font-size: 1.2rem; width: 30px; }
+        .about-box { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius); padding: 32px; }
+        .about-box h4 { color: var(--accent-gold); margin-bottom: 12px; }
+        .about-box hr { border-color: rgba(255,255,255,0.05); margin: 20px 0; }
+        .about-quote { background: rgba(255,179,71,0.06); padding: 16px; border-radius: var(--radius); border-left: 4px solid var(--accent-gold); }
+        @media (max-width:600px) { .page-hero h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -91,20 +29,12 @@
     <div class="glow-orbe glow-orbe-1"></div>
     <div class="glow-orbe glow-orbe-2"></div>
 
-    <!-- ============================================
-    HEADER / NAVBAR - WITH RISK DISCLOSURE TOP
-    ============================================ -->
+    <!-- HEADER / NAVBAR -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
         <div class="container">
-            
-            <!-- RISK DISCLOSURE - SABSE UPPER -->
             <div class="risk-disclosure-bar">
-                <p>
-                    <i class="fas fa-exclamation-triangle"></i>
-                    Risk Disclosure: Investment in securities market are subject to market risks. Read all the related documents carefully before investing.
-                </p>
+                <p><i class="fas fa-exclamation-triangle"></i> Risk Disclosure: Investment in securities market are subject to market risks. Read all the related documents carefully before investing.</p>
             </div>
-            
             <div class="nav-flex">
                 <a href="index.html" class="logo">
                     <i class="fas fa-chart-line" aria-hidden="true"></i>
@@ -113,13 +43,9 @@
                         <span class="logo-sub">SEBI Registered · INH000016825</span>
                     </div>
                 </a>
-
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
-
                 <div class="nav-links" id="navLinks">
                     <a href="index.html">Home</a>
                     <a href="about.html" class="active">About</a>
@@ -134,9 +60,6 @@
         </div>
     </nav>
 
-    <!-- ============================================
-    PAGE HERO
-    ============================================ -->
     <section class="page-hero">
         <div class="container">
             <span class="section-badge"><i class="fas fa-info-circle"></i> About Us</span>
@@ -145,189 +68,123 @@
         </div>
     </section>
 
-    <!-- ============================================
-    ABOUT CONTENT
-    ============================================ -->
     <section class="container py-3">
         <div class="grid-2">
             <div>
                 <h3 style="font-size:1.6rem; margin-bottom:12px;">The future depends on <span class="text-gold">your beginning</span></h3>
-                <p style="color:var(--text-gray);">
-                    <strong>Beginning Research</strong> is a SEBI-registered investment advisory firm 
-                    (INH000016825) dedicated to providing research-based, disciplined, and transparent 
-                    trading & investment solutions.
-                </p>
-                <p style="color:var(--text-gray); margin-top:12px;">
-                    We specialize in Nifty & Bank Nifty options, index options, F&O, and equity trading — 
-                    with a strong emphasis on risk management and timely market insights.
-                </p>
+                <p style="color:var(--text-gray);"><strong>Beginning Research</strong> is a SEBI-registered investment advisory firm (INH000016825) dedicated to providing research-based, disciplined, and transparent trading & investment solutions.</p>
+                <p style="color:var(--text-gray); margin-top:12px;">We specialize in Nifty & Bank Nifty options, index options, F&O, and equity trading — with a strong emphasis on risk management and timely market insights.</p>
                 <div style="margin-top:20px;">
-                    <div class="about-feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span><strong>SEBI Registered</strong> – INH000016825</span>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-building"></i>
-                        <span><strong>BSE Enlistment</strong> – 6225</span>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-user-tie"></i>
-                        <span><strong>Proprietor</strong> – Sanju Patel</span>
-                    </div>
+                    <div class="about-feature"><i class="fas fa-shield-alt"></i><span><strong>SEBI Registered</strong> – INH000016825</span></div>
+                    <div class="about-feature"><i class="fas fa-building"></i><span><strong>BSE Enlistment</strong> – 6225</span></div>
+                    <div class="about-feature"><i class="fas fa-user-tie"></i><span><strong>Proprietor</strong> – Sanju Patel</span></div>
                 </div>
             </div>
-
             <div class="about-box">
                 <h4><i class="fas fa-map-marker-alt"></i> Office Address</h4>
-                <p style="color:var(--text-gray);">
-                    305 Princess Business Skyline,<br>
-                    AB Road, Vijay Nagar,<br>
-                    Indore, Madhya Pradesh - 452010
-                </p>
+                <p style="color:var(--text-gray);">305 Princess Business Skyline,<br>AB Road, Vijay Nagar,<br>Indore, Madhya Pradesh - 452010</p>
                 <hr />
                 <h4><i class="fas fa-phone"></i> Contact</h4>
-                <p style="color:var(--text-gray);">
-                    <strong>Mobile:</strong> 7509343696<br>
-                    <strong>Email:</strong> patelsanju9893@gmail.com
-                </p>
+                <p style="color:var(--text-gray);"><strong>Mobile:</strong> 7509343696<br><strong>Email:</strong> patelsanju9893@gmail.com</p>
                 <hr />
                 <div class="about-quote">
-                    <p style="color:var(--text-gray); font-size:0.9rem;">
-                        <i class="fas fa-quote-left" style="color:var(--accent-gold); opacity:0.5;"></i>
-                        Our mission is to empower traders and investors with accurate research, 
-                        disciplined strategies, and transparent advisory.
-                    </p>
+                    <p style="color:var(--text-gray); font-size:0.9rem;"><i class="fas fa-quote-left" style="color:var(--accent-gold); opacity:0.5;"></i> Our mission is to empower traders and investors with accurate research, disciplined strategies, and transparent advisory.</p>
                 </div>
             </div>
         </div>
     </section>
 
-      <!-- ============================================================ -->
-  <!-- ========== FOOTER ========== -->
-  <!-- ============================================================ -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</h3>
-          
-          <!-- Sanju Patel - Proprietor -->
-          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px; margin-bottom: 2px;">
-            <strong style="color: var(--accent-gold);">Sanju Patel</strong> 
-            <span style="color: rgba(255,255,255,0.5);">· Proprietor of Beginning Research</span>
-          </p>
-          
-          <!-- Registration No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 2px;">
-            Registration No. <strong style="color: var(--accent-gold);">INH000016825</strong>
-          </p>
-          
-          <!-- BSE Enlistment No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 6px;">
-            BSE Enlistment No. <strong style="color: var(--accent-gold);">6225</strong>
-          </p>
-          
-          <!-- Address, Email, Support -->
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; line-height: 1.5; max-width: 350px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); width: 18px;"></i>
-            305 Princess Business Skyline, AB Road, Vijay Nagar, Indore, MP - 452010
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-envelope" style="color: var(--accent-gold); width: 18px;"></i>
-            patelsanju9893@gmail.com
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-phone" style="color: var(--accent-gold); width: 18px;"></i>
-            Support: 7509343696
-          </p>
-          
-          <div class="social-icons" style="margin-top: 14px;">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          </div>
+    <!-- FOOTER - SAME AS INDEX -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px; margin-bottom: 2px;">
+                        <strong style="color: var(--accent-gold);">Sanju Patel</strong> 
+                        <span style="color: rgba(255,255,255,0.5);">· Proprietor of Beginning Research</span>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 2px;">
+                        Registration No. <strong style="color: var(--accent-gold);">INH000016825</strong>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 6px;">
+                        BSE Enlistment No. <strong style="color: var(--accent-gold);">6225</strong>
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; line-height: 1.5; max-width: 350px;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); width: 18px;"></i>
+                        305 Princess Business Skyline, AB Road, Vijay Nagar, Indore, MP - 452010
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
+                        <i class="fas fa-envelope" style="color: var(--accent-gold); width: 18px;"></i>
+                        patelsanju9893@gmail.com
+                    </p>
+                    <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
+                        <i class="fas fa-phone" style="color: var(--accent-gold); width: 18px;"></i>
+                        Support: 7509343696
+                    </p>
+                    <div class="social-icons" style="margin-top: 14px;">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Cash Segment</a></li>
+                        <li><a href="services.html">Futures Segment</a></li>
+                        <li><a href="services.html">Stock Options</a></li>
+                        <li><a href="services.html">Index Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:7509343696"><i class="fas fa-phone" style="color: #7bc9a0; width:20px;"></i> 7509343696</a></li>
+                        <li><a href="mailto:patelsanju9893@gmail.com"><i class="fas fa-envelope" style="color: #7bc9a0; width:20px;"></i> patelsanju9893@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-globe" style="color: #7bc9a0; width:20px;"></i> www.beginningresearch.in</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp" style="color: #25D366; width:20px;"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.06); margin-bottom: 16px;">
+                <p style="color: rgba(255,255,255,0.35); font-size: 0.7rem; text-align: center; line-height: 1.6; max-width: 900px; margin: 0 auto;">
+                    <strong>Disclaimer:</strong> Trading & investing are subject to market risks. Beginning Research is not guaranteeing or assuring any profit. Investors are requested to review the prospectus carefully and obtain about specific legal, tax, and financial implications of the investment/participation in the scheme.
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Beginning Research. All rights reserved.</span>
+                <span class="sebi-badge"><i class="fas fa-shield-alt"></i> SEBI Registered · INH000016825</span>
+                <span>Made with <i class="fas fa-heart" style="color: #7bc9a0;"></i> in India</span>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Cash Segment</a></li>
-            <li><a href="services.html">Futures Segment</a></li>
-            <li><a href="services.html">Stock Options</a></li>
-            <li><a href="services.html">Index Options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:7509343696"><i class="fas fa-phone" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> 7509343696</a></li>
-            <li><a href="mailto:patelsanju9893@gmail.com"><i class="fas fa-envelope" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> patelsanju9893@gmail.com</a></li>
-            <li><a href="#"><i class="fas fa-globe" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> www.beginningresearch.in</a></li>
-            <li><a href="#"><i class="fab fa-whatsapp" style="color: #25D366; width: 20px;" aria-hidden="true"></i> WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Beginning Research. All rights reserved.</span>
-        <span class="sebi-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> SEBI Registered · INH000016825</span>
-        <span>Made with <i class="fas fa-heart" style="color: #7bc9a0;" aria-hidden="true"></i> in India</span>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-    <!-- ============================================
-    SCRIPT
-    ============================================ -->
     <script>
-        // ============================================================
-        // MOBILE MENU TOGGLE
-        // ============================================================
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
-
             if (menuToggle && navLinks) {
                 menuToggle.addEventListener('click', function() {
                     navLinks.classList.toggle('open');
                     menuToggle.classList.toggle('active');
                 });
             }
-
-            // ============================================================
-            // NAVBAR SCROLL EFFECT
-            // ============================================================
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-
-            // ============================================================
-            // ACTIVE NAV LINK (Page detection)
-            // ============================================================
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-            const navLinksAll = document.querySelectorAll('.nav-links a');
-            
-            navLinksAll.forEach(link => {
-                const href = link.getAttribute('href');
-                if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
-                    link.classList.add('active');
-                } else if (href === 'index.html' && currentPage === '') {
-                    link.classList.add('active');
-                }
+                if (window.scrollY > 50) { navbar.classList.add('scrolled'); } 
+                else { navbar.classList.remove('scrolled'); }
             });
         });
     </script>
