@@ -1,1732 +1,774 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- ========== SEO & META TAGS ========== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Primary Meta Tags -->
-  <title>Beginning Research | SEBI Registered Investment Advisor</title>
-  <meta name="title" content="Beginning Research - SEBI Registered Investment Advisor" />
-  <meta name="description" content="SEBI Registered (INH000016825) Investment Advisory for Nifty, Bank Nifty, F&O and Equity Trading. Research-Based, Disciplined and Transparent Advisory." />
-  <meta name="keywords" content="investment advisory, SEBI registered, stock market advisory, Nifty options, Bank Nifty options, F&O trading, equity trading, risk management, research-based advisory, beginning research" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
-  <meta name="author" content="Beginning Research" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
-  <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.beginningresearch.in/" />
-  <meta property="og:title" content="Beginning Research · SEBI Registered Investment Advisory India" />
-  <meta property="og:description" content="SEBI Registered (INH000016825) investment advisory for Nifty, Bank Nifty, F&O, and Equity trading. Research-based, disciplined, and transparent advisory." />
-  <meta property="og:image" content="https://www.beginningresearch.in/og-image.jpg" />
+    <title>Beginning Research | The Future Depends On Your Beginning</title>
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://www.beginningresearch.in/" />
-  <meta property="twitter:title" content="Beginning Research · SEBI Registered Investment Advisory India" />
-  <meta property="twitter:description" content="SEBI Registered (INH000016825) investment advisory for Nifty, Bank Nifty, F&O, and Equity trading. Research-based, disciplined, and transparent advisory." />
-  <meta property="twitter:image" content="https://www.beginningresearch.in/og-image.jpg" />
+    <meta name="description"
+        content="Beginning Research is a SEBI Registered Research Analyst providing professional stock market research and advisory services.">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.beginningresearch.in/" />
+    <meta name="keywords"
+        content="Stock Market, Research Analyst, SEBI Registered, Beginning Research, Equity, Futures, Options">
 
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FinancialService",
-      "name": "Beginning Research",
-      "description": "SEBI Registered investment advisory firm providing research-based trading and investment solutions for Nifty, Bank Nifty, F&O, and Equity markets.",
-      "url": "https://www.beginningresearch.in/",
-      "telephone": "+91-7509343696",
-      "email": "patelsanju9893@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Indore",
-        "addressCountry": "India"
-      },
-      "priceRange": "₹10000/month",
-      "openingHours": "Mon-Fri 09:00-18:00",
-      "foundingDate": "2016"
-    }
-  </script>
+    <meta name="author" content="Beginning Research">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="assets/images/logo.png">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
-    }
+    <!-- Google Font -->
 
-    :root {
-      --primary: #0a2540;
-      --primary-light: #1a3b5c;
-      --secondary: #1a6b4a;
-      --secondary-light: #2a8b5a;
-      --accent: #1a6b4a;
-      --accent-light: #e8f5ee;
-      --bg-light: #f5f7fa;
-      --text-dark: #0a1a2a;
-      --text-muted: #2a4055;
-      --white: #ffffff;
-      --shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.12);
-      --radius: 8px;
-      --transition: 0.3s ease;
-      
-      /* Gold Colors */
-      --accent-gold: #c9a84c;
-      --accent-gold-dark: #b8973a;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    body {
-      background: var(--bg-light);
-      color: var(--text-dark);
-      line-height: 1.7;
-      scroll-behavior: smooth;
-    }
+    <!-- Font Awesome -->
 
-    .container {
-      max-width: 1240px;
-      margin: 0 auto;
-      padding: 0 28px;
-    }
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    /* ============================================================ */
-    /* ========== HEADER / NAVIGATION ========== */
-    /* ============================================================ */
-    .navbar {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.02);
-      transition: var(--transition);
-    }
+    <!-- Main CSS -->
 
-    .navbar.scrolled {
-      background: rgba(255, 255, 255, 0.98);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
-    }
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    .nav-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: var(--primary);
-    }
-
-    .logo i {
-      font-size: 2rem;
-      color: var(--secondary);
-    }
-
-    .logo-text {
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--primary);
-    }
-
-    .logo-text span {
-      color: var(--accent-gold);
-    }
-
-    .logo-sub {
-      display: block;
-      font-size: 0.6rem;
-      color: #8a8a9a;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-top: -4px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      font-weight: 500;
-      font-size: 1.05rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      padding: 6px 0;
-      border-bottom: 2px solid transparent;
-      transition: var(--transition);
-      color: var(--text-dark);
-      text-decoration: none;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      border-bottom-color: var(--secondary);
-      color: var(--primary);
-    }
-
-    .nav-cta {
-      background: var(--secondary);
-      color: var(--white) !important;
-      padding: 10px 28px !important;
-      border-radius: var(--radius);
-      border-bottom: none !important;
-      font-weight: 600;
-      transition: var(--transition);
-      box-shadow: 0 4px 12px rgba(26, 107, 74, 0.3);
-    }
-
-    .nav-cta:hover {
-      background: var(--secondary-light);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(26, 107, 74, 0.35);
-    }
-
-    /* ===== Mobile Menu Toggle ===== */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 8px;
-      background: none;
-      border: none;
-    }
-
-    .menu-toggle span {
-      width: 28px;
-      height: 2.5px;
-      background: var(--primary);
-      border-radius: 4px;
-      transition: var(--transition);
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-
-    /* pages */
-    .page {
-      display: none;
-      animation: fadeUp 0.35s ease;
-      padding: 50px 0 70px;
-    }
-
-    .page.active {
-      display: block;
-    }
-
-    @keyframes fadeUp {
-      0% { opacity: 0.3; transform: translateY(12px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    .section-title {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--primary);
-      letter-spacing: -0.02em;
-      text-align: center;
-    }
-
-    .section-sub {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 720px;
-      margin: 0 auto 48px;
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-block;
-      background: var(--accent-light);
-      color: var(--secondary);
-      font-weight: 600;
-      padding: 6px 20px;
-      border-radius: var(--radius);
-      font-size: 0.85rem;
-      letter-spacing: 0.5px;
-      margin-bottom: 16px;
-      border: 1px solid rgba(26, 107, 74, 0.15);
-    }
-
-    .badge i {
-      color: var(--secondary);
-    }
-
-    /* ===== 3-COLUMN GRID (Standard) ===== */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    /* ===== 2-COLUMN GRID ===== */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    /* ===== 4-COLUMN GRID ===== */
-    .grid-4 {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    /* cards */
-    .card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 32px 26px;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      border: 1px solid rgba(0, 0, 0, 0.02);
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 30px 50px -16px rgba(0, 0, 0, 0.15);
-    }
-
-    .card i {
-      font-size: 2.6rem;
-      color: var(--secondary);
-      margin-bottom: 16px;
-    }
-
-    .card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
-
-    .card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* ===== HERO SECTION ===== */
-    .hero-section {
-      min-height: 90vh;
-      min-height: 90dvh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, var(--primary) 0%, #0d3352 50%, #1a4a6e 100%);
-      position: relative;
-      overflow: hidden;
-      padding-top: 80px;
-    }
-
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 800px;
-      height: 800px;
-      background: radial-gradient(circle, rgba(26, 107, 74, 0.08) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .hero-section::after {
-      content: '';
-      position: absolute;
-      bottom: -30%;
-      left: -10%;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(26, 107, 74, 0.05) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .hero-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-      width: 100%;
-    }
-
-    .hero-content {
-      padding: 20px 0;
-    }
-
-    .hero-content .badge {
-      background: rgba(26, 107, 74, 0.15);
-      border-color: rgba(26, 107, 74, 0.3);
-      color: #a8d5c0;
-    }
-
-    .hero-content .hero-sub {
-      font-size: 1rem;
-      color: rgba(255, 255, 255, 0.6);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-
-    .hero-content h1 {
-      font-size: 3.8rem;
-      font-weight: 800;
-      line-height: 1.15;
-      color: var(--white);
-    }
-
-    .hero-content h1 span {
-      color: #7bc9a0;
-    }
-
-    .hero-content p {
-      font-size: 1.2rem;
-      max-width: 550px;
-      color: rgba(255, 255, 255, 0.85);
-      margin: 16px 0 28px;
-    }
-
-    /* Hero Image */
-    .hero-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .hero-image .image-placeholder {
-      width: 100%;
-      max-width: 500px;
-      aspect-ratio: 1/0.9;
-      background: linear-gradient(145deg, rgba(26, 107, 74, 0.2), rgba(10, 37, 64, 0.4));
-      border-radius: var(--radius);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-image .image-placeholder i {
-      font-size: 5rem;
-      color: var(--secondary);
-      margin-bottom: 16px;
-      opacity: 0.8;
-    }
-
-    .hero-image .image-placeholder h3 {
-      color: var(--white);
-      font-size: 1.4rem;
-      margin-bottom: 8px;
-    }
-
-    .hero-image .image-placeholder p {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.9rem;
-    }
-
-    .hero-image .floating-badge {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 12px 18px;
-      border-radius: var(--radius);
-      color: var(--white);
-      font-size: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .hero-image .floating-badge.top-right {
-      top: -10px;
-      right: 20px;
-    }
-
-    .hero-image .floating-badge.bottom-left {
-      bottom: 20px;
-      left: -10px;
-    }
-
-    .hero-image .floating-badge i {
-      font-size: 1.2rem;
-      color: var(--secondary);
-    }
-
-    /* ===== BUTTONS ===== */
-    .btn {
-      display: inline-block;
-      padding: 14px 36px;
-      font-weight: 600;
-      font-size: 1rem;
-      border-radius: var(--radius);
-      transition: all 0.3s ease;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    .btn-primary {
-      background: var(--secondary);
-      color: var(--white);
-      box-shadow: 0 4px 16px rgba(26, 107, 74, 0.3);
-    }
-
-    .btn-primary:hover {
-      background: var(--secondary-light);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(26, 107, 74, 0.4);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.08);
-      transform: translateY(-3px);
-      box-shadow: inset 0 0 0 2px var(--secondary), 0 8px 28px rgba(0, 0, 0, 0.15);
-    }
-
-    .btn-white {
-      background: var(--white);
-      color: var(--primary);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .btn-white:hover {
-      background: #f5f7fa;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
-    }
-
-    .btn-gold {
-      background: var(--accent-gold);
-      color: var(--primary);
-      box-shadow: 0 4px 16px rgba(201, 168, 76, 0.35);
-    }
-
-    .btn-gold:hover {
-      background: var(--accent-gold-dark);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(201, 168, 76, 0.45);
-    }
-
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    /* ===== STATS BAR ===== */
-    .stats-section {
-      background: var(--white);
-      padding: 50px 0;
-      box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.04);
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .stats-grid .stat-item {
-      text-align: center;
-      padding: 20px;
-      border-right: 1px solid rgba(0, 0, 0, 0.06);
-    }
-
-    .stats-grid .stat-item:last-child {
-      border-right: none;
-    }
-
-    .stats-grid .stat-number {
-      font-size: 3rem;
-      font-weight: 800;
-      color: var(--primary);
-      display: block;
-      line-height: 1.2;
-    }
-
-    .stats-grid .stat-number .plus {
-      color: var(--secondary);
-      font-size: 2.2rem;
-    }
-
-    .stats-grid .stat-label {
-      font-size: 1rem;
-      color: var(--text-muted);
-      font-weight: 500;
-      margin-top: 4px;
-    }
-
-    .stats-grid .stat-label i {
-      color: var(--secondary);
-      margin-right: 6px;
-    }
-
-    /* ===== WHY CHOOSE US ===== */
-    .why-item {
-      background: var(--white);
-      padding: 32px 24px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      transition: var(--transition);
-      border-top: 4px solid var(--secondary);
-    }
-
-    .why-item:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
-    }
-
-    .why-item i {
-      font-size: 2.4rem;
-      color: var(--secondary);
-      margin-bottom: 12px;
-    }
-
-    .why-item h4 {
-      font-size: 1.2rem;
-      color: var(--primary);
-      margin-bottom: 6px;
-    }
-
-    .why-item p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* ===== SERVICES WE OFFER ===== */
-    .service-offer-item {
-      background: var(--white);
-      padding: 30px 24px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      transition: var(--transition);
-      border-bottom: 4px solid var(--secondary);
-    }
-
-    .service-offer-item:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
-    }
-
-    .service-offer-item i {
-      font-size: 2.8rem;
-      color: var(--secondary);
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .service-offer-item h4 {
-      font-size: 1.3rem;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-
-    .service-offer-item p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* ===== CLIENT SUCCESS STORIES ===== */
-    .testimonial-card {
-      background: var(--white);
-      padding: 32px 28px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      transition: var(--transition);
-      border: 1px solid rgba(0, 0, 0, 0.03);
-    }
-
-    .testimonial-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
-    }
-
-    .testimonial-card .stars {
-      color: #f5a623;
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
-    }
-
-    .testimonial-card .profit {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--secondary);
-      margin-bottom: 12px;
-    }
-
-    .testimonial-card .testimonial-text {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 16px;
-      font-style: italic;
-    }
-
-    .testimonial-card .client-name {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 1.05rem;
-    }
-
-    .testimonial-card .client-title {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    /* ===== CTA SECTION ===== */
-    .cta-section {
-      background: linear-gradient(135deg, var(--primary) 0%, #0d3352 50%, #1a4a6e 100%);
-      padding: 60px 0;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      top: -30%;
-      right: -10%;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(26, 107, 74, 0.1) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .cta-section .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .cta-section h2 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .cta-section p {
-      font-size: 1.2rem;
-      color: rgba(255, 255, 255, 0.8);
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
-
-    .cta-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px 40px;
-      margin-top: 20px;
-    }
-
-    .cta-item {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 1.1rem;
-    }
-
-    .cta-item i {
-      font-size: 1.6rem;
-      color: var(--secondary);
-      width: 40px;
-      text-align: center;
-    }
-
-    .cta-item a {
-      color: var(--white);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .cta-item a:hover {
-      color: #7bc9a0;
-    }
-
-    .subscribe-badge {
-      display: inline-block;
-      background: rgba(201, 168, 76, 0.15);
-      border: 1px solid var(--accent-gold);
-      color: var(--accent-gold);
-      padding: 10px 30px;
-      border-radius: var(--radius);
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-top: 20px;
-    }
-
-    /* ===== ABOUT PAGE ===== */
-    .about-feature {
-      display: flex;
-      gap: 16px;
-      margin-top: 24px;
-      align-items: center;
-    }
-
-    .about-feature i {
-      font-size: 1.8rem;
-      color: var(--secondary);
-      width: 48px;
-    }
-
-    .value-item {
-      background: var(--white);
-      padding: 24px 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      border-top: 4px solid var(--secondary);
-      transition: var(--transition);
-    }
-
-    .value-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
-    }
-
-    .value-item i {
-      font-size: 2rem;
-      color: var(--secondary);
-      margin-bottom: 10px;
-    }
-
-    .value-item h4 {
-      font-size: 1.2rem;
-      color: var(--primary);
-    }
-
-    /* ===== CONTACT PAGE ===== */
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-    }
-
-    .contact-details {
-      background: var(--white);
-      padding: 36px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 24px;
-      font-size: 1.1rem;
-    }
-
-    .contact-item i {
-      width: 48px;
-      height: 48px;
-      background: var(--bg-light);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--secondary);
-      font-size: 1.3rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 16px 20px;
-      border: 1px solid #dde3e9;
-      border-radius: var(--radius);
-      font-size: 1rem;
-      background: var(--white);
-      transition: var(--transition);
-      margin-bottom: 16px;
-    }
-
-    .contact-form textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: 2px solid var(--secondary);
-      border-color: transparent;
-    }
-
-    .section-center {
-      text-align: center;
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      background: var(--primary);
-      color: rgba(255, 255, 255, 0.85);
-      padding: 50px 0 30px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      margin-bottom: 30px;
-    }
-
-    .footer-brand h3 {
-      font-size: 1.6rem;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .footer-brand h3 i {
-      color: var(--secondary);
-    }
-
-    .footer-brand p {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 0.95rem;
-      max-width: 300px;
-    }
-
-    .footer-brand .social-icons {
-      margin-top: 16px;
-      display: flex;
-      gap: 14px;
-    }
-
-    .footer-brand .social-icons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.06);
-      border-radius: var(--radius);
-      color: rgba(255, 255, 255, 0.7);
-      transition: var(--transition);
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .footer-brand .social-icons a:hover {
-      background: var(--secondary);
-      color: var(--white);
-      transform: translateY(-3px);
-    }
-
-    .footer-col h4 {
-      color: var(--white);
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-      font-weight: 600;
-    }
-
-    .footer-col ul {
-      list-style: none;
-    }
-
-    .footer-col ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-col ul li a {
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-      transition: var(--transition);
-      font-size: 0.95rem;
-    }
-
-    .footer-col ul li a:hover {
-      color: #7bc9a0;
-      padding-left: 4px;
-    }
-
-    .footer-bottom {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.5);
-    }
-
-    .footer-bottom .sebi-badge {
-      background: rgba(255, 255, 255, 0.06);
-      padding: 8px 18px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(26, 107, 74, 0.2);
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    .footer-bottom .sebi-badge i {
-      color: #7bc9a0;
-      margin-right: 6px;
-    }
-
-    /* ============================================================ */
-    /* RESPONSIVE */
-    /* ============================================================ */
-    @media (max-width: 1024px) {
-      .hero-wrapper {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-      }
-      .hero-content h1 {
-        font-size: 2.8rem;
-      }
-      .stats-grid,
-      .grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .stats-grid .stat-item {
-        border-right: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-        padding-bottom: 24px;
-      }
-      .stats-grid .stat-item:nth-child(3),
-      .stats-grid .stat-item:nth-child(4) {
-        border-bottom: none;
-      }
-      .grid-3 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .hero-image .floating-badge {
-        display: none;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .hero-wrapper {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .hero-content h1 {
-        font-size: 2.6rem;
-      }
-      .hero-content p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .hero-content .btn-group {
-        justify-content: center;
-      }
-      .hero-image .image-placeholder {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      .grid-2,
-      .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 0;
-        gap: 16px;
-        align-items: center;
-      }
-      .nav-links.open {
-        display: flex;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-      .nav-flex {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .logo {
-        justify-content: center;
-      }
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-      }
-      .stats-grid .stat-number {
-        font-size: 2.2rem;
-      }
-      .grid-3 {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-      .cta-section h2 {
-        font-size: 2.2rem;
-      }
-      .grid-4 {
-        grid-template-columns: 1fr 1fr;
-      }
-      .hero-image .floating-badge {
-        display: none;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .grid-3 {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      .grid-4 {
-        grid-template-columns: 1fr 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      .cta-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-      .hero-image .image-placeholder {
-        max-width: 100%;
-      }
-      .hero-image .image-placeholder i {
-        font-size: 3.5rem;
-      }
-      .hero-image .floating-badge {
-        display: none;
-      }
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .section-title {
-        font-size: 2rem;
-      }
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-      .hero-content p {
-        font-size: 1rem;
-      }
-      .btn {
-        padding: 12px 24px;
-        font-size: 0.9rem;
-      }
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .stats-grid .stat-number {
-        font-size: 1.8rem;
-      }
-      .stats-grid .stat-label {
-        font-size: 0.85rem;
-      }
-      .grid-3 {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-      }
-      .grid-4 {
-        grid-template-columns: 1fr 1fr;
-        max-width: 100%;
-      }
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-      }
-      .cta-section h2 {
-        font-size: 1.8rem;
-      }
-      .cta-section p {
-        font-size: 1rem;
-      }
-      .hero-image .floating-badge {
-        display: none;
-      }
-    }
-
-    .mt-4 { margin-top: 40px; }
-    .mb-3 { margin-bottom: 30px; }
-    .text-accent { color: var(--secondary); }
-    .text-center { text-align: center; }
-    .flex-center { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-    .mx-auto { margin-left: auto; margin-right: auto; }
-    .py-4 { padding-top: 40px; padding-bottom: 40px; }
-    .section-padding { padding: 60px 0; }
-  </style>
 </head>
+
 <body>
 
-  <!-- ============================================================ -->
-  <!-- ========== HEADER / NAVIGATION ========== -->
-  <!-- ============================================================ -->
-  <nav class="navbar" role="navigation" aria-label="Main Navigation">
-    <div class="container nav-flex">
-      <a href="index.html" class="logo">
-        <i class="fas fa-chart-line" aria-hidden="true"></i>
-        <div>
-          <span class="logo-text">Beginning <span>Research</span></span>
-          <span class="logo-sub">SEBI Registered · INH000016825</span>
+<!-- ========================= -->
+<!-- Top Risk Disclosure -->
+<!-- ========================= -->
+
+<div class="top-risk">
+
+<marquee scrollamount="6">
+
+<strong>Risk Disclosure :</strong>
+
+Investments in securities market are subject to market risks.
+Read all the related documents carefully before investing.
+
+</marquee>
+
+</div>
+
+<!-- ========================= -->
+<!-- Header -->
+<!-- ========================= -->
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="assets/images/logo.png" alt="Beginning Research">
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a class="active" href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="membership.html">Membership</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="login.html" class="login-btn">Login</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Hero Section -->
+<!-- ========================= -->
+
+<section class="hero">
+
+<div class="container hero-box">
+
+<div class="hero-left">
+
+<h5>WELCOME TO</h5>
+
+<h1>Beginning Research</h1>
+
+<h3>The Future Depends On Your Beginning</h3>
+
+<p>
+
+Beginning Research is committed to providing research-based stock market advisory services with a disciplined and transparent approach. Our recommendations are prepared after detailed technical and market analysis to help traders make informed decisions.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="membership.html" class="btn-one">
+
+Become A Member
+
+</a>
+
+<a href="contact.html" class="btn-two">
+
+Talk To Expert
+
+</a>
+
+</div>
+
+<div class="company-info">
+
+<div>
+
+<h4>SEBI Registration</h4>
+
+<p>INH000016825</p>
+
+</div>
+
+<div>
+
+<h4>BSE Enlistment</h4>
+
+<p>6225</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="assets/images/hero.png" alt="Stock Market">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- About Short -->
+<!-- ========================= -->
+
+<section class="about-short">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Professional Research. Better Decisions.</h2>
+
+<p>
+
+At Beginning Research, our focus is to deliver quality market research with integrity, discipline and consistency. We believe informed decisions begin with reliable research.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Why Choose Us -->
+<!-- ========================= -->
+
+<section class="why-choose">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>WHY BEGINNING RESEARCH</span>
+
+            <h2>Your Trusted Research Partner</h2>
+
+            <p>
+                We combine technical analysis, disciplined research and
+                transparent advisory services to help traders make better
+                market decisions.
+            </p>
+
         </div>
-      </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <div class="why-grid">
 
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="nav-cta">
-          <i class="fas fa-phone" aria-hidden="true"></i> Get Started
-        </a>
-      </div>
-    </div>
-  </nav>
+            <div class="why-card">
 
-  <!-- ============================================================ -->
-  <!-- ========== LANDING PAGE ========== -->
-  <!-- ============================================================ -->
-  <section id="page-landing" class="page active" style="padding: 0;">
+                <i class="fa-solid fa-chart-line"></i>
 
-    <!-- HERO SECTION -->
-    <header class="hero-section" role="banner">
-      <div class="container hero-wrapper">
-        <div class="hero-content">
-          <span class="badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> SEBI REGISTERED · INH000016825</span>
-          <p class="hero-sub">Research-Based · Disciplined · Transparent</p>
-          <h1>Smarter Trading. <span>Better Decisions.</span></h1>
-          <p>Your trusted partner for Nifty, Bank Nifty, F&O, and equity trading with research-backed insights.</p>
-          <div class="btn-group">
-            <a href="#" data-page="services" class="btn btn-primary"><i class="fas fa-chart-pie" aria-hidden="true"></i> Explore Services</a>
-            <a href="#" data-page="contact" class="btn btn-outline"><i class="fab fa-whatsapp" aria-hidden="true"></i> Free Consultation</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="image-placeholder">
-            <i class="fas fa-chart-line" aria-hidden="true"></i>
-            <h3>Stock Market Advisory</h3>
-            <p>Research-based · SEBI Registered</p>
-            <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; justify-content: center;">
-              <span style="background: rgba(26, 107, 74, 0.2); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; color: #a8d5c0;">Nifty</span>
-              <span style="background: rgba(26, 107, 74, 0.2); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; color: #a8d5c0;">Bank Nifty</span>
-              <span style="background: rgba(26, 107, 74, 0.2); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; color: #a8d5c0;">F&O</span>
-              <span style="background: rgba(26, 107, 74, 0.2); padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; color: #a8d5c0;">Equity</span>
+                <h3>Research Based Calls</h3>
+
+                <p>
+                    Every recommendation is prepared after detailed
+                    technical and market analysis.
+                </p>
+
             </div>
-          </div>
-          <div class="floating-badge top-right">
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <span>4.8/5 Rating</span>
-          </div>
-        </div>
-      </div>
-    </header>
 
-    <!-- WHY CHOOSE US - 3 Columns -->
-    <section class="container" style="padding-top: 60px; padding-bottom: 40px;" aria-label="Why Choose Us">
-      <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-sub">Professional, disciplined, and beginner-friendly advisory.</p>
-      <div class="grid-3">
-        <div class="why-item">
-          <i class="fas fa-shield-alt" aria-hidden="true"></i>
-          <h4>SEBI Registered</h4>
-          <p>INH000016825 – legally authorized, research-based advice with investor protection.</p>
-        </div>
-        <div class="why-item">
-          <i class="fas fa-chart-line" aria-hidden="true"></i>
-          <h4>Research-Based Insights</h4>
-          <p>Data-driven Nifty, Bank Nifty, and equity recommendations.</p>
-        </div>
-        <div class="why-item">
-          <i class="fas fa-user-graduate" aria-hidden="true"></i>
-          <h4>Beginner-Friendly Support</h4>
-          <p>Clear guidance and hand-holding for new investors.</p>
-        </div>
-        <div class="why-item">
-          <i class="fas fa-headset" aria-hidden="true"></i>
-          <h4>Dedicated RM</h4>
-          <p>Personal relationship manager for all your queries.</p>
-        </div>
-        <div class="why-item">
-          <i class="fas fa-bell" aria-hidden="true"></i>
-          <h4>Timely Updates</h4>
-          <p>Real-time market insights and trade calls.</p>
-        </div>
-        <div class="why-item">
-          <i class="fas fa-handshake" aria-hidden="true"></i>
-          <h4>Trust & Transparency</h4>
-          <p>Honest, ethical advisory with clear communication.</p>
-        </div>
-      </div>
-    </section>
+            <div class="why-card">
 
-    <!-- CORE PRINCIPLES - 4 Columns -->
-    <section class="container" style="padding-bottom: 60px;">
-      <div style="background: var(--white); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow); border-left: 6px solid var(--secondary);">
-        <div class="grid-4">
-          <div style="text-align: center;">
-            <i class="fas fa-microscope" style="font-size: 2.8rem; color: var(--secondary);" aria-hidden="true"></i>
-            <h4 style="margin-top: 12px;">Accurate Research</h4>
-            <p style="color: var(--text-muted);">Data-Driven Insights</p>
-          </div>
-          <div style="text-align: center;">
-            <i class="fas fa-shield-virus" style="font-size: 2.8rem; color: var(--secondary);" aria-hidden="true"></i>
-            <h4 style="margin-top: 12px;">Risk Management</h4>
-            <p style="color: var(--text-muted);">Protecting Your Capital</p>
-          </div>
-          <div style="text-align: center;">
-            <i class="fas fa-route" style="font-size: 2.8rem; color: var(--secondary);" aria-hidden="true"></i>
-            <h4 style="margin-top: 12px;">Disciplined Approach</h4>
-            <p style="color: var(--text-muted);">Consistent & Systematic</p>
-          </div>
-          <div style="text-align: center;">
-            <i class="fas fa-hand-holding-heart" style="font-size: 2.8rem; color: var(--secondary);" aria-hidden="true"></i>
-            <h4 style="margin-top: 12px;">Trust & Transparency</h4>
-            <p style="color: var(--text-muted);">Honest & Ethical Advisory</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
+                <i class="fa-solid fa-shield-halved"></i>
 
-  <!-- ============================================================ -->
-  <!-- ========== ABOUT PAGE ========== -->
-  <!-- ============================================================ -->
-  <section id="page-about" class="page" aria-label="About Us">
-    <div class="container">
-      <div class="section-center">
-        <span class="badge"><i class="fas fa-flag" aria-hidden="true"></i> Beginning Research</span>
-        <h2 class="section-title">About Us</h2>
-        <p class="section-sub">SEBI Registered (INH000016825) — Research-based, disciplined, and transparent investment advisory.</p>
-      </div>
+                <h3>Risk Management</h3>
 
-      <!-- About - 2 Columns -->
-      <div class="grid-2">
-        <div>
-          <p style="font-size: 1.1rem;"><strong>Beginning Research</strong> is a SEBI-registered investment advisory firm (INH000016825) dedicated to providing research-based, disciplined, and transparent trading & investment solutions.</p>
-          <p style="margin-top: 16px;">We specialize in Nifty & Bank Nifty options, index options, F&O, and equity trading — with a strong emphasis on risk management and timely market insights.</p>
-          <div class="about-feature"><i class="fas fa-shield-alt" aria-hidden="true"></i> <span><strong>SEBI Registered</strong> – INH000016825, legally authorized advisory.</span></div>
-          <div class="about-feature"><i class="fas fa-chart-bar" aria-hidden="true"></i> <span><strong>Research-Driven</strong> – data-backed recommendations for smarter trading.</span></div>
-          <div class="about-feature"><i class="fas fa-user-tie" aria-hidden="true"></i> <span><strong>Dedicated RM</strong> – personalized support for every client.</span></div>
-          <div class="about-feature"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span><strong>Beginner-Friendly</strong> – we guide you through every step.</span></div>
-        </div>
-        <div style="background: var(--white); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow);">
-          <i class="fas fa-quote-left" style="font-size: 2.6rem; color: var(--secondary); opacity: 0.4;" aria-hidden="true"></i>
-          <p style="font-size: 1.2rem; font-style: italic; margin: 12px 0;">"Our mission is to empower traders and investors with accurate research, disciplined strategies, and transparent advisory."</p>
-          <div style="margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap;">
-            <span style="background: var(--bg-light); padding: 6px 18px; border-radius: var(--radius); border: 1px solid var(--secondary);">Nifty Options</span>
-            <span style="background: var(--bg-light); padding: 6px 18px; border-radius: var(--radius); border: 1px solid var(--secondary);">Bank Nifty</span>
-            <span style="background: var(--bg-light); padding: 6px 18px; border-radius: var(--radius); border: 1px solid var(--secondary);">F&O</span>
-            <span style="background: var(--bg-light); padding: 6px 18px; border-radius: var(--radius); border: 1px solid var(--secondary);">Equity</span>
-          </div>
-          <div style="margin-top: 24px; background: var(--accent-light); padding: 12px 20px; border-radius: var(--radius); text-align: center;">
-            <i class="fas fa-shield-alt" style="color: var(--secondary);" aria-hidden="true"></i> <strong>SEBI Registration No.: INH000016825</strong>
-          </div>
-        </div>
-      </div>
+                <p>
+                    We always focus on disciplined trading with proper
+                    risk management principles.
+                </p>
 
-      <!-- Why Choose Us - 3 Columns (About Page) -->
-      <h3 style="font-size: 2rem; margin: 50px 0 20px; color: var(--primary); text-align: center;">Why Choose Us</h3>
-      <div class="grid-3">
-        <div class="value-item"><i class="fas fa-certificate" aria-hidden="true"></i><h4>SEBI Registered</h4><p>INH000016825 – Trust & compliance.</p></div>
-        <div class="value-item"><i class="fas fa-flask" aria-hidden="true"></i><h4>Research-Based</h4><p>Data-driven market insights.</p></div>
-        <div class="value-item"><i class="fas fa-bullseye" aria-hidden="true"></i><h4>Professional Approach</h4><p>Disciplined & systematic.</p></div>
-        <div class="value-item"><i class="fas fa-hands-helping" aria-hidden="true"></i><h4>Beginner-Friendly</h4><p>Support at every step.</p></div>
-        <div class="value-item"><i class="fas fa-bell" aria-hidden="true"></i><h4>Timely Updates</h4><p>Real-time market calls.</p></div>
-        <div class="value-item"><i class="fas fa-user-tie" aria-hidden="true"></i><h4>Dedicated RM</h4><p>Personal relationship manager.</p></div>
-      </div>
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>Quick Updates</h3>
+
+                <p>
+                    Receive timely recommendations and important market
+                    updates without unnecessary delays.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>Dedicated Support</h3>
+
+                <p>
+                    Our team is always available to assist members with
+                    service-related queries.
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
 
-  <!-- ============================================================ -->
-  <!-- ========== SERVICES PAGE ========== -->
-  <!-- ============================================================ -->
-  <section id="page-services" class="page" aria-label="Our Services">
+</section>
+
+<!-- ========================= -->
+<!-- Our Services -->
+<!-- ========================= -->
+
+<section class="services">
+
     <div class="container">
-      <div class="section-center">
-        <span class="badge"><i class="fas fa-bullhorn" aria-hidden="true"></i> Our Services</span>
-        <h2 class="section-title">What We Offer</h2>
-        <p class="section-sub">Specialized trading and investment solutions for every type of market participant.</p>
-      </div>
 
-      <!-- Services - 3 Columns -->
-      <div class="grid-3">
-        <div class="card"><i class="fas fa-chart-simple" aria-hidden="true"></i><h3>Nifty & Bank Nifty Options</h3><p>Strategic options trading on Nifty and Bank Nifty with defined risk-reward.</p></div>
-        <div class="card"><i class="fas fa-chart-bar" aria-hidden="true"></i><h3>Index Options</h3><p>Trade on broader market indices with our research-backed strategies.</p></div>
-        <div class="card"><i class="fas fa-forward" aria-hidden="true"></i><h3>F&O (Futures & Options)</h3><p>Comprehensive futures and options advisory for hedging and speculation.</p></div>
-        <div class="card"><i class="fas fa-building" aria-hidden="true"></i><h3>Equity Trading</h3><p>Cash market recommendations with clear entry/exit levels.</p></div>
-        <div class="card"><i class="fas fa-shield-virus" aria-hidden="true"></i><h3>Risk Management</h3><p>Protect your capital with our disciplined risk frameworks.</p></div>
-        <div class="card"><i class="fas fa-microscope" aria-hidden="true"></i><h3>Research-Based Insights</h3><p>Actionable market intelligence derived from technical & fundamental analysis.</p></div>
-      </div>
+        <div class="section-title">
 
-      <!-- WhatsApp CTA -->
-      <div style="background: var(--primary); color: white; border-radius: var(--radius); padding: 40px 30px; margin: 40px 0; text-align: center;">
-        <i class="fab fa-whatsapp" style="font-size: 4rem; color: #25D366; margin-bottom: 16px;" aria-hidden="true"></i>
-        <h3 style="font-size: 2rem;">Connect with us on WhatsApp</h3>
-        <p style="margin: 12px 0 20px; font-size: 1.2rem;">For details & FREE consultation</p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; font-size: 1.3rem;">
-          <span><i class="fas fa-phone-alt" style="color: #7bc9a0;" aria-hidden="true"></i> 7509343696</span>
-          <span><i class="fas fa-globe" style="color: #7bc9a0;" aria-hidden="true"></i> www.beginningresearch.in</span>
+            <span>OUR SERVICES</span>
+
+            <h2>Professional Advisory Services</h2>
+
         </div>
-        <a href="#" data-page="contact" class="btn btn-white" style="margin-top: 24px; display: inline-block;"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat Now</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================================ -->
-  <!-- ========== SERVICES WE OFFER (Global Section) ========== -->
-  <!-- ============================================================ -->
-  <section style="background: var(--white); padding: 60px 0;" aria-label="Services We Offer">
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-coins"></i>
+
+                <h3>Cash Segment</h3>
+
+                <p>
+                    Receive 1–2 carefully researched trading calls on
+                    fundamentally and technically strong stocks.
+                </p>
+
+                <a href="services.html">Read More</a>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <h3>Futures Segment</h3>
+
+                <p>
+                    Professional futures recommendations prepared after
+                    detailed market trend analysis.
+                </p>
+
+                <a href="services.html">Read More</a>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                <h3>Stock Options</h3>
+
+                <p>
+                    High probability stock option recommendations with
+                    disciplined risk management.
+                </p>
+
+                <a href="services.html">Read More</a>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <h3>Index Options</h3>
+
+                <p>
+                    Nifty & Bank Nifty recommendations based on
+                    technical and market trend analysis.
+                </p>
+
+                <a href="services.html">Read More</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Company Highlights -->
+<!-- ========================= -->
+
+<section class="highlights">
+
     <div class="container">
-      <div class="section-center">
-        <span class="badge"><i class="fas fa-star" aria-hidden="true"></i> Our Expertise</span>
-        <h2 class="section-title">Services We Offer</h2>
-        <p class="section-sub">Comprehensive trading and investment solutions tailored to your needs.</p>
-      </div>
-      <div class="grid-3">
-        <div class="service-offer-item">
-          <i class="fas fa-chart-simple" aria-hidden="true"></i>
-          <h4>Nifty & Bank Nifty Options</h4>
-          <p>Strategic options trading with defined risk-reward ratios on India's top indices.</p>
-        </div>
-        <div class="service-offer-item">
-          <i class="fas fa-chart-bar" aria-hidden="true"></i>
-          <h4>Index Options</h4>
-          <p>Trade on broader market indices with our research-backed strategies.</p>
-        </div>
-        <div class="service-offer-item">
-          <i class="fas fa-forward" aria-hidden="true"></i>
-          <h4>F&O (Futures & Options)</h4>
-          <p>Comprehensive futures and options advisory for hedging and speculation.</p>
-        </div>
-        <div class="service-offer-item">
-          <i class="fas fa-building" aria-hidden="true"></i>
-          <h4>Equity Trading</h4>
-          <p>Cash market recommendations with clear entry and exit levels.</p>
-        </div>
-        <div class="service-offer-item">
-          <i class="fas fa-shield-virus" aria-hidden="true"></i>
-          <h4>Risk Management</h4>
-          <p>Protect your capital with our disciplined risk frameworks and strategies.</p>
-        </div>
-        <div class="service-offer-item">
-          <i class="fas fa-microscope" aria-hidden="true"></i>
-          <h4>Research-Based Insights</h4>
-          <p>Actionable market intelligence from technical & fundamental analysis.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================================ -->
-  <!-- ========== CONTACT PAGE ========== -->
-  <!-- ============================================================ -->
-  <section id="page-contact" class="page" aria-label="Contact Us">
+        <div class="highlight-box">
+
+            <h2>4</h2>
+
+            <p>Market Segments</p>
+
+        </div>
+
+        <div class="highlight-box">
+
+            <h2>1-2</h2>
+
+            <p>Trading Calls Daily</p>
+
+        </div>
+
+        <div class="highlight-box">
+
+            <h2>100%</h2>
+
+            <p>Research Based Approach</p>
+
+        </div>
+
+        <div class="highlight-box">
+
+            <h2>24×7</h2>
+
+            <p>Customer Support</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- About Proprietor -->
+<!-- ========================= -->
+
+<section class="founder">
+
     <div class="container">
-      <div class="section-center">
-        <span class="badge"><i class="fas fa-phone" aria-hidden="true"></i> Get in Touch</span>
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-sub">Reach out for a free consultation or any queries. We're here to help.</p>
-      </div>
-      <div class="contact-wrapper">
-        <div class="contact-details">
-          <div class="contact-item"><i class="fab fa-whatsapp" style="color: #25D366;" aria-hidden="true"></i> <span><strong>WhatsApp</strong><br>7509343696</span></div>
-          <div class="contact-item"><i class="fas fa-phone-alt" aria-hidden="true"></i> <span><strong>Call</strong><br>+91 7509343696</span></div>
-          <div class="contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> <span><strong>Email</strong><br>patelsanju9893@gmail.com</span></div>
-          <div class="contact-item"><i class="fas fa-globe" aria-hidden="true"></i> <span><strong>Website</strong><br>www.beginningresearch.in</span></div>
-          <div style="margin-top: 30px; background: var(--bg-light); padding: 20px; border-radius: var(--radius); border-left: 6px solid var(--secondary);">
-            <p><strong><i class="fas fa-shield-alt" style="color: var(--secondary);" aria-hidden="true"></i> SEBI Registered</strong><br>INH000016825 · Research-based advisory</p>
-          </div>
-          <div style="margin-top: 20px; font-size: 0.9rem; color: var(--text-muted);">
-            <p>Investments in securities market are subject to market risks.<br>Read all related documents carefully before investing.</p>
-          </div>
-        </div>
-        <div class="contact-form" style="background: white; padding: 36px; border-radius: var(--radius); box-shadow: var(--shadow);">
-          <h3 style="margin-bottom: 20px;">Send a message</h3>
-          <input type="text" placeholder="Full name" aria-label="Full name" />
-          <input type="email" placeholder="Email address" aria-label="Email address" />
-          <input type="text" placeholder="Phone number" aria-label="Phone number" />
-          <textarea placeholder="How can we help you?" aria-label="Message"></textarea>
-          <button class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane" aria-hidden="true"></i> Send message</button>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; text-align: center;">We respond within 24 hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================================ -->
-  <!-- ========== CTA SECTION ========== -->
-  <!-- ============================================================ -->
-  <section class="cta-section" aria-label="Start Your Trading Journey">
+        <div class="founder-content">
+
+            <h2>Leadership</h2>
+
+            <h3>Mr. Sanju Patel</h3>
+
+            <span>Proprietor</span>
+
+            <p>
+                Beginning Research is committed to delivering quality
+                research-backed market insights with integrity,
+                transparency and professionalism. Our objective is to
+                empower traders through disciplined research and informed
+                decision-making.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Membership Plans -->
+<!-- ========================= -->
+
+<section class="membership">
+
     <div class="container">
-      <h2>Ready to Start Your Trading Journey?</h2>
-      <p>Join successful traders and start making profits</p>
-      <div class="cta-grid">
-        <div class="cta-item">
-          <i class="fas fa-phone-alt" aria-hidden="true"></i>
-          <div>
-            <strong>Call Now</strong><br>
-            <a href="tel:+917509343696">+91-7509343696</a>
-          </div>
-        </div>
-        <div class="cta-item">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
-          <div>
-            <strong>Email</strong><br>
-            <a href="mailto:patelsanju9893@gmail.com">patelsanju9893@gmail.com</a>
-          </div>
-        </div>
-        <div class="cta-item">
-          <i class="fas fa-calendar-check" aria-hidden="true"></i>
-          <div>
-            <strong>Schedule Call</strong><br>
-            <a href="#" data-page="contact">Book a consultation</a>
-          </div>
-        </div>
-      </div>
-      <div class="subscribe-badge">
-        <i class="fas fa-rupee-sign" aria-hidden="true"></i> Subscribe Now for ₹10000/Month
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================================ -->
-  <!-- ========== FOOTER ========== -->
-  <!-- ============================================================ -->
-  <footer class="footer" role="contentinfo">
+        <div class="section-title">
+
+            <span>OUR MEMBERSHIP</span>
+
+            <h2>Choose Your Research Plan</h2>
+
+            <p>
+                Select the membership plan that best matches your trading style.
+            </p>
+
+        </div>
+
+        <div class="pricing-grid">
+
+            <!-- Cash -->
+
+            <div class="price-card">
+                <h3>Cash Basic</h3>
+                <h1>₹10,000</h1>
+                <ul>
+                    <li>✔ 1–2 Calls Per Day</li>
+                    <li>✔ WhatsApp Support</li>
+                    <li>✔ Technical Research</li>
+                </ul>
+                <a href="contact.html">Join Now</a>
+            </div>
+
+            <div class="price-card popular">
+                <span>POPULAR</span>
+                <h3>Cash Premium</h3>
+                <h1>₹20,000</h1>
+                <ul>
+                    <li>✔ Premium Research</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ Market Updates</li>
+                </ul>
+                <a href="contact.html">Join Now</a>
+            </div>
+
+            <div class="price-card">
+                <h3>Cash Precision</h3>
+                <h1>₹40,000</h1>
+                <ul>
+                    <li>✔ High Accuracy Calls</li>
+                    <li>✔ Dedicated Support</li>
+                    <li>✔ Premium Updates</li>
+                </ul>
+                <a href="contact.html">Join Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Payment Details -->
+<!-- ========================= -->
+
+<section class="payment-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>PAYMENT DETAILS</span>
+
+<h2>Easy Payment Options</h2>
+
+</div>
+
+<div class="payment-box">
+
+<h3>Axis Bank</h3>
+
+<p><strong>Account Name :</strong> BEGINNING RESEARCH</p>
+
+<p><strong>Account Number :</strong> 924020025344328</p>
+
+<p><strong>IFSC Code :</strong> UTIB0000612</p>
+
+<p><strong>UPI ID :</strong> beginningresearch1@okaxis</p>
+
+<a href="contact.html" class="pay-btn">
+
+Payment Support
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Contact -->
+<!-- ========================= -->
+
+<section class="contact-home">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>CONTACT US</span>
+
+<h2>Get In Touch</h2>
+
+</div>
+
+<div class="contact-grid">
+
+<div>
+
+<h3>Office Address</h3>
+
+<p>
+
+305 Princess Business Skyline,
+AB Road,
+Vijay Nagar,
+Indore,
+Madhya Pradesh – 452010
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Email</h3>
+
+<p>
+
+patelsanju9893@gmail.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Phone</h3>
+
+<p>
+
++91 7509343696
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Call To Action -->
+<!-- ========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Start Your Trading Journey Today
+
+</h2>
+
+<p>
+
+Professional research. Better decisions. Better opportunities.
+
+</p>
+
+<a href="membership.html">
+
+Become A Member
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FAQ Section -->
+<!-- ========================= -->
+
+<section class="faq">
+
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Beginning Research</h3>
-          
-          <!-- Sanju Patel - Proprietor -->
-          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px; margin-bottom: 2px;">
-            <strong style="color: var(--accent-gold);">Sanju Patel</strong> 
-            <span style="color: rgba(255,255,255,0.5);">· Proprietor of Beginning Research</span>
-          </p>
-          
-          <!-- Registration No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 2px;">
-            Registration No. <strong style="color: var(--accent-gold);">INH000016825</strong>
-          </p>
-          
-          <!-- BSE Enlistment No. -->
-          <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-bottom: 6px;">
-            BSE Enlistment No. <strong style="color: var(--accent-gold);">6225</strong>
-          </p>
-          
-          <!-- Address, Email, Support -->
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; line-height: 1.5; max-width: 350px;">
-            <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); width: 18px;"></i>
-            305 Princess Business Skyline, AB Road, Vijay Nagar, Indore, MP - 452010
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-envelope" style="color: var(--accent-gold); width: 18px;"></i>
-            patelsanju9893@gmail.com
-          </p>
-          <p style="color: rgba(255,255,255,0.45); font-size: 0.8rem; margin-top: 2px;">
-            <i class="fas fa-phone" style="color: var(--accent-gold); width: 18px;"></i>
-            Support: 7509343696
-          </p>
-          
-          <div class="social-icons" style="margin-top: 14px;">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-            <a href="#" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          </div>
+
+        <div class="section-title">
+
+            <span>FAQ</span>
+
+            <h2>Frequently Asked Questions</h2>
+
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+
+        <div class="faq-box">
+
+            <div class="faq-item">
+                <h3>How many trading calls will I receive?</h3>
+                <p>You can expect approximately 1–2 research-based trading calls per day depending on market conditions.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How will I receive trading calls?</h3>
+                <p>Trading recommendations are shared through our official communication channels after successful membership activation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is Beginning Research SEBI Registered?</h3>
+                <p>Beginning Research displays its SEBI registration details on the website. Clients are advised to verify all regulatory details before subscribing.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I contact customer support?</h3>
+                <p>You can reach us through phone, email or by visiting our office during business hours.</p>
+            </div>
+
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Cash Segment</a></li>
-            <li><a href="services.html">Futures Segment</a></li>
-            <li><a href="services.html">Stock Options</a></li>
-            <li><a href="services.html">Index Options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:7509343696"><i class="fas fa-phone" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> 7509343696</a></li>
-            <li><a href="mailto:patelsanju9893@gmail.com"><i class="fas fa-envelope" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> patelsanju9893@gmail.com</a></li>
-            <li><a href="#"><i class="fas fa-globe" style="color: #7bc9a0; width: 20px;" aria-hidden="true"></i> www.beginningresearch.in</a></li>
-            <li><a href="#"><i class="fab fa-whatsapp" style="color: #25D366; width: 20px;" aria-hidden="true"></i> WhatsApp</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- ✅ DISCLAIMER - YAHAN SAHI JAGAH LAGAYA (Footer ke ANDAR) -->
-      <div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.06); margin-bottom: 16px;">
-        <p style="color: rgba(255,255,255,0.35); font-size: 0.7rem; text-align: center; line-height: 1.6; max-width: 900px; margin: 0 auto;">
-          <strong>Disclaimer:</strong> Trading & investing are subject to market risks. Beginning Research is not guaranteeing or assuring any profit. Investors are requested to review the prospectus carefully and obtain about specific legal, tax, and financial implications of the investment/participation in the scheme.
-        </p>
-      </div>
-      
-      <div class="footer-bottom">
-        <span>© 2026 Beginning Research. All rights reserved.</span>
-        <span class="sebi-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i> SEBI Registered · INH000016825</span>
-        <span>Made with <i class="fas fa-heart" style="color: #7bc9a0;" aria-hidden="true"></i> in India</span>
-      </div>
+
     </div>
-  </footer>
 
-  <!-- ============================================================ -->
-  <!-- ========== SCRIPT ========== -->
-  <!-- ============================================================ -->
-  <script>
-    // ============================================================
-    // MOBILE MENU TOGGLE
-    // ============================================================
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.getElementById('menuToggle');
-      const navLinks = document.getElementById('navLinks');
+</section>
 
-      if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', function() {
-          navLinks.classList.toggle('open');
-          menuToggle.classList.toggle('active');
-        });
-      }
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
 
-      // ============================================================
-      // NAVBAR SCROLL EFFECT
-      // ============================================================
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
+<footer class="footer">
 
-      // ============================================================
-      // PAGE NAVIGATION (SPA)
-      // ============================================================
-      const pages = {
-        landing: document.getElementById('page-landing'),
-        about: document.getElementById('page-about'),
-        services: document.getElementById('page-services'),
-        contact: document.getElementById('page-contact')
-      };
+<div class="container footer-grid">
 
-      const navLinksAll = document.querySelectorAll('#navLinks a[data-page]');
+<div>
 
-      function showPage(pageId) {
-        Object.keys(pages).forEach(key => {
-          if (pages[key]) pages[key].classList.remove('active');
-        });
-        if (pages[pageId]) {
-          pages[pageId].classList.add('active');
-        }
-        navLinksAll.forEach(link => {
-          link.classList.remove('active');
-          if (link.dataset.page === pageId) {
-            link.classList.add('active');
-          }
-        });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+<img src="assets/images/logo.png" width="180" alt="Beginning Research">
 
-      document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[data-page]');
-        if (!link) return;
-        e.preventDefault();
-        const page = link.dataset.page;
-        if (page && pages[page]) {
-          showPage(page);
-          history.pushState(null, '', '#' + page);
-        }
-      });
+<p>
 
-      window.addEventListener('hashchange', function() {
-        const hash = window.location.hash.replace('#', '');
-        if (hash && pages[hash]) showPage(hash);
-        else showPage('landing');
-      });
+Beginning Research provides research-based stock market advisory services with transparency, discipline and professionalism.
 
-      const initHash = window.location.hash.replace('#', '');
-      if (initHash && pages[initHash]) showPage(initHash);
-      else showPage('landing');
-    });
-  </script>
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="membership.html">Membership</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Legal</h3>
+
+<ul>
+
+<li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms & Conditions</a></li>
+<li><a href="refund-policy.html">Refund Policy</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p><strong>Proprietor:</strong> Sanju Patel</p>
+
+<p><strong>SEBI Registration:</strong> INH000016825</p>
+
+<p><strong>BSE Enlistment No.:</strong> 6225</p>
+
+<p><strong>Mobile:</strong> +91 7509343696</p>
+
+<p><strong>Email:</strong> patelsanju9893@gmail.com</p>
+
+<p>
+
+305 Princess Business Skyline,<br>
+
+AB Road, Vijay Nagar,<br>
+
+Indore, Madhya Pradesh - 452010
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Beginning Research. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
